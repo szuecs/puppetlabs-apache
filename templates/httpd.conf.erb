@@ -47,8 +47,8 @@ Include "<%= @mod_load_dir %>/*.conf"
 <% end -%>
 Include "<%= @ports_file %>"
 
-LogFormat "%a %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
-LogFormat "%a %l %u %t \"%r\" %>s %b" common
+LogFormat "%a %V %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
+LogFormat "%a %V %l %u %t \"%r\" %>s %b" common
 LogFormat "%{Referer}i -> %U" referer
 LogFormat "%{User-agent}i" agent
 
